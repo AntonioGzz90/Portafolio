@@ -49,7 +49,7 @@
     }
 }
 
-@media screen and (max-height:479px){
+/* @media screen and (max-height:479px){
     .main img{
         width: 200px;
         height: 200px;
@@ -57,10 +57,21 @@
     }
 }
 
+@media screen and (max-height:1178px){
+    .imagenes{
+        width: 250px;
+        height: 250px;
+        
+        
+    }
+} */
+
+
+
 /* -------------- Estilos generales -------------- */
 
 body{
-    background-color: #131313;
+    background-color: #000001;
 }
 html{
     scroll-behavior:smooth;
@@ -81,11 +92,52 @@ h1{
 
 }
 
+p{
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.seccionUno{
+    background-color: #161926;
+    color: white;
+}
+
+.seccionDos{
+    background-color: #2e3049;
+    color: white;
+}
+
+.seccionTres{
+    background-color: #4b4b70;
+    color: white;
+}
+
+.seccionCuatro{
+    background-color: #6d689c;
+    color: white;
+}
+
+
 .seccion-oscura{
     color: white;
     background-color: #1b1b32;
     /* background-color:#000035 ; */
     /* background-color: #252440; */
+}
+
+.seccion-skills{
+    color: white;
+    /* background-color: #213556; */
+    background-color: #484773;
+    /* background-color:#82619b ;  */
+    /* background-color:  #d384ca; */
+    /* background-color:  #ffb2fb; */
+}
+
+.seccion-proyectos{
+    color:white;
+    /* background-color:#82619b ; */
+    /* background-color:  #84819d; */
+    background-color: #7f8cc2;
 }
 
 .seccion-titulo{
@@ -96,11 +148,12 @@ h1{
 
 .seccion-descripcion{
     font-size: 1.2rem;
-    color: #584e4e;
+    
 }
 
 .seccion-texto{
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
 .seccion-clara{
@@ -131,19 +184,21 @@ h1{
 
 
 
+
 /* -------------- Barra De Navegacion -------------- */
 
 
 .navbar{
     padding: 2rem;
-    background-color: black;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    background-color: #000001;
+    /* box-shadow: 0 3px 10px rgba(0,0,0,0.15); */
     transition: all 1.5s;
+   
 }
 
 .navbar .nav-link:hover{
     background-color: white;
-    color: black;
+    color: black !important; 
 }
 .navbar .nav-link{
     color: white;
@@ -152,14 +207,24 @@ h1{
 .navbar-scrolled{
 
     background-blend-mode:darken; 
+    padding: 1em 1em 1em 1em;
+    padding-left: 1em;  
     background-color: rgba(94, 89, 89, 0.5);
-    box-shadow: 0 10px 10px rgba(0,0,0,0.15);
+
+    /* box-shadow: 0 10px 10px rgba(0,0,0,0.15); */
+    
+}
+
+.navbar .nav-item{
+    padding-left: 1em;
 }
 
 .navbar-scrolled .nav-link:hover{
     background-color: white;
-    color:black
+    color:black !important
 }
+
+
 
 
 .navbar-collapse{
@@ -185,7 +250,7 @@ h1{
 
 .nav-link{
     transition: all 0.4s ease-in;
-    border-radius: 100%;
+    border: 1em;
 }
 
 
@@ -362,6 +427,63 @@ h1{
     
 }
 
+/* -------------- Skills -------------- */
+
+.seccion-skills-librerias{
+    /* background-color:#82619b ;  */
+    /* background-color:  #d384ca; */
+    /* background-color:  #ffb2fb; */
+    background-color:  #161926;
+}
+
+.skills{
+    padding: 0px 0px 100px 0px;
+}
+
+.container .seccion-titulo-libreria{
+    padding-top: 100px;
+    font-size: 2rem;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.imagenes{
+    max-width: 325px;
+    max-height: 225px;
+    padding: 50px 50px 0 50px;
+    
+}
+
+
+.container .row .col{
+    justify-content: center;
+    align-items: center;
+}
+
+progress {
+    -webkit-appearance: none;
+    padding: 5px 0px 5px 0;
+  }
+  
+  ::-webkit-progress-bar {
+    background-color:#CAB9FF;
+  }
+
+
+  ::-webkit-progress-value{
+    background-color: #484773;
+  }
+
+
+.container .row .col p{
+    font-size: 1.5em;
+    padding-top:25px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 
 /* -------------- Experiencia -------------- */
 .experiencia{
@@ -465,8 +587,8 @@ h1{
 .proyecto:hover .overlay{
     opacity: 1;
 }
-.proyecto .overlay i:hover{
-    color: blue;
+.proyecto .overlay .iconos-contenedor i:hover{
+    color: #887675;
 }
 
 .proyecto:hover img{
@@ -489,14 +611,14 @@ h1{
 }
 
 .overlay .iconos-contenedor-chicos i{
-    color: black;
+    color: #f3eae8;
     font-size: 20px;
     margin: 5px;
 
 }
 
 .overlay i{
-    color: black;
+    color: #f3eae8;
     font-size: 40px;
     margin: 20px;
 
@@ -506,6 +628,92 @@ h1{
 .overlay .iconos-contenedor-chicos-texto{
     font-size: 10px;
 }
+
+/* --------------  Formal --------------  */
+
+.abrir-modal{
+    font-size: 15px;
+}
+
+.boton-modal{ 
+    margin-bottom: 20px;
+    background-color: white;
+    
+
+    
+}
+
+.boton-modal i{
+    color:white;
+    background-color: black;
+}
+
+.container #modal1::backdrop{
+    background-color: rgba(0,0,0,.55);
+}
+
+.modales{
+    color: white;
+    max-width: 1200px;
+    max-height: 800px;
+    /* background-color: #DABEB6;  */
+    /* background-color: #000035 ; */
+    background-color: #252440;
+    overflow:none;
+    overflow-y: auto;   
+
+
+}
+
+.modales::-webkit-scrollbar{
+    width: 7px;
+    background-color: white;
+    
+}
+
+.modales::-webkit-scrollbar-thumb{
+    background-color: #7A8D9B;
+    border-radius: 20px;
+}
+
+.modales::-webkit-scrollbar-
+
+.descripcion-imagen{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.descripcion-proyecto{
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    font-size: 20px;
+    
+}
+
+.modales::backdrop{
+    background-color: rgba(0,0,0,.55);
+}
+
+dialog{
+    border: none;
+}
+
+
+
+.container .btn-info{
+    background-color: #CAB9FF;
+    border: none;
+    transition: 0.2 ease-in-out;
+}
+
+.container .btn-info:hover{
+    background-color: #7BB9FF;
+}
+
 
 /* --------------  Articulos --------------  */
 
@@ -580,9 +788,9 @@ h1{
 
 .contacto .rectangulo{
     margin-top: -5rem ;  /*Esto hace que el rectangulo este sobre puesto al contenedor*/
-    background-color: rgb(13,110,253);
+    background-color:#161926;
     border-radius: 10px;
-    box-shadow: 0px 1px 4px 1px white;
+    box-shadow: 0px 1px 4px 1px black;
 }
 
 .contacto .row{
@@ -681,3 +889,17 @@ footer{
     color: #aeaeae;
     padding: 30px;
 }
+
+.navbar .navbar.nav .navbar-link{
+    color: #fff;
+    font-size: 1.1en;
+    padding: 0 1em;    
+  }
+  
+  .navbar-brand img{
+    width: 100px ;
+  }
+
+  .navbar-brand{
+    margin-right: 0;
+  }
